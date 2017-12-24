@@ -1,0 +1,12 @@
+server:
+  port: 1112
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 阻止自己作为客户端来尝试注册自己,搭建高可用注册中心不要设置这个值，即默认为true
+#    register-with-eureka: false
+    # 不抓取服务列表,搭建高可用注册中心不要设置这个值，即默认为true
+#    fetch-registry: false
+    service-url:
+      defaultZone : http://localhost:1111/eureka/
