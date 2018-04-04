@@ -1,6 +1,7 @@
 spring:
   application:
-    name: ch-eureka-server
+    # 应用的名称,同一个服务的多个服务实例名称要一样
+    name: eureka-server
 
 
 
